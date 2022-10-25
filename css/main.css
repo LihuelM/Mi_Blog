@@ -1,11 +1,11 @@
 /* Generales */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Roboto+Mono:wght@200;300;500&display=swap');
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Quicksand; 
+    font-family: 'Roboto Mono';
 }
 .home-body {
     position: fixed;
@@ -31,25 +31,19 @@ nav {
     background-color: #426d7e;
     background-image: linear-gradient(43deg, #426d7e 0%, #133342 16%, #0e2838 44%, #0c1011 73%, #000000 100%);
     border: 1px solid #426d7e;
-    justify-content: space-between;
-}
-.nav-icons-containers {
-    align-items: center;
-    display: flex;
-    margin: 0 50px;
-}
-.nav-icons-containers .icons a {
-    color: #426d7e;
+    justify-content: flex-end;
 }
 .nav-profile-link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 50px;
+    margin: 0 50px;
 }
 .nav-profile-link a {
-    color: whitesmoke;
+    font-family: Orbitron;
+    color: #426d7e;
+    margin: 0 20px;
 }
+
 
 
 /* Main-index (home) */
@@ -67,18 +61,18 @@ nav {
     grid-column: 2;
     justify-items: center;
     height: 350px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .home-main-text {
-    font-family: Quicksand;
+    font-family: Orbitron;
     font-size: 30px;
-    font-weight: 700px;
-    letter-spacing: 5px;
+    font-weight: 100px;
+    letter-spacing: 2px;
     color: whitesmoke;
     text-align: center;
 }
 .home-main-button {
-    width: 110px;
+    width: 200px;
     height: 50px;
     background-color: #426d7e;
     background-image: linear-gradient(43deg, #426d7e 0%, #133342 16%, #0e2838 44%, #0c1011 73%, #000000 100%);
@@ -89,7 +83,7 @@ nav {
     cursor: pointer;
 }
 .home-main-button a {
-    font-weight: 700;
+    font-family: Orbitron;
     font-size: 18px;
     line-height: 50px;
     color: whitesmoke;
@@ -103,6 +97,7 @@ nav {
     background-color: #e6e9ed;
     padding: 0 50px 40px;
     border-radius: 10px;
+    margin-top: 30px;
 }
 .blogs-main-new {
     display: grid;
@@ -111,9 +106,11 @@ nav {
 }
 .blogs-new-img-container {
     grid-column: 1;
+    display: flex;
+    justify-content: space-around;
 }
 .blogs-new-img-container img {
-    width: 80%;
+    /* width: 80%; */
     padding-top: 20px;
 }
 .blogs-new-info-container {
@@ -171,35 +168,59 @@ nav {
 }
 
 /* Main Profile */
+.profile-main {
+    background-image: url('../assets/img/fondo_humo.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .profile-main-container {
-    padding: 70px 40px;
-    background-color: #e6e9ed;
-    margin-bottom: 50px;
+    padding: 40px 40px;
     border-radius: 10px;
+}
+.profile-main-container--presentation {
+    color: #cdd2da;
 }
 .profile-main-container img {
     width: 320px;
     margin-right: 30px;
+    
 }
 .profile-main-container .profile-container {
     display: flex;
+    align-items: center;
+    padding: 40px 100px;
+    border-radius: 10px;
+    background-color: rgba(14, 40, 56,0.6);
+    box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
+}
+.profile-main-proyects .grid-container {
+    max-width: 1150px;
+    margin: auto;
 }
 .profile-main-proyects {
-    padding: 0 50px 40px;
+    padding: 0 40px 40px;
 }
 .profile-main-proyects h3 {
     border-bottom: 1px solid #cdd2da;
     padding-bottom: 35px;
     text-align: center;
+    color: #cdd2da;
 }  
 .proyects-main-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    border-radius: 10px;
+    background-color: rgba(14, 40, 56,0.6);
+    box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
+    margin-top: 120px;
+    padding: 0 40px;
 }
 .proyect-container {
-    padding: 0 5px;
+    padding: 40px 20px;
+    color: #cdd2da;
 }
-
 
 /* Seccion de contacto */
 .contact-main-container {
@@ -229,13 +250,33 @@ nav {
 /* Footer*/
 footer {
     width: 100%;
-    height: 80px;
+    height: 60px;
+    display: flex;
     background-color: #426d7e;
     background-image: linear-gradient(43deg, #426d7e 0%, #133342 16%, #0e2838 44%, #0c1011 73%, #000000 100%);
-    border-top: 4px solid #47cfac;
+    border: 1px solid #426d7e;
+    justify-content: center;
     text-align: center;
 }
-footer p {
-    color: whitesmoke;
-    margin-top: 30px;
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    margin: 0px;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+.icons {
+    list-style: none;
+    display: flex;
+    
+}
+.icons img {
+    opacity: .8;
+    height: 50px;
+    border-radius: 50%;
+    /* box-shadow:  3px 3px 10px #cdd2da; */
 }
