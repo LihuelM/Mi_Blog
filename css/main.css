@@ -91,13 +91,13 @@ nav {
 /* Main-blogs */
 .blogs-main {
     display: grid;
-    background-image: url('../assets/img/fondo_humo.png');
+    background-image: url('../assets/img/fondo_humo2.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .blogs-news-container {
-    padding: 80px 40px 40px;
+    padding: 80px 40px;
     border-radius: 10px;
 }
 .blogs-main-new {
@@ -106,7 +106,7 @@ nav {
     grid-template-rows: 2fr;
     padding: 40px 40px;
     border-radius: 10px;
-    background-color: rgba(14, 40, 56,0.7);
+    background-color: rgba(14, 40, 56,0.3);
     box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
     color: #cdd2da;
     font-size: 18px;
@@ -119,9 +119,7 @@ nav {
     justify-content: space-around;
 }
 .blogs-new-img-container img {
-    width: 50%;
     height: 320px;
-    padding-right: 40px;
 }
 .blogs-new-info-container {
     grid-column: 2;
@@ -130,15 +128,16 @@ nav {
     margin-bottom: 55px;
 }
 .blogs-button {
-    border: 1px solid rgba(14, 40, 56,0.7);
+    border: 1px solid rgba(14, 40, 56,0.6);
     box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 14px;
     color: #cdd2da;
+    align-items: flex-end;
 }
 .blogs-posts-container {
-    padding: 40px 40px 80px;
+    padding: 40px 40px 40px;
     border-radius: 10px;
 }
 .blogs-posts-container h3 {
@@ -153,10 +152,9 @@ nav {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 10px;
-    justify-content: center;
+    grid-column-gap: 30px;
     border-radius: 10px;
-    background-color: rgba(14, 40, 56,0.7);
+    background-color: rgba(14, 40, 56,0.6);
     box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
     margin: 100px auto 60px;
     padding: 40px 40px;
@@ -164,7 +162,9 @@ nav {
     
 }
 .blogs-posts-container .post-container {
-    padding: 10px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
 }
 .blogs-posts-container .post-container p {
@@ -173,8 +173,8 @@ nav {
 }
 .blogs-posts-container .post-container img {
     border-radius: 10px;
-    width: 100%;
-    height: 320px;
+    width: 320px;
+    height: 220px;
 }
 
 /* Main-blogpost */
@@ -232,7 +232,6 @@ nav {
     margin: auto;
     padding: 0 40px 40px;
     max-width: 1300px;
-    /* margin: auto; */
 }
 .profile-main-proyects h3 {
     border-bottom: 1px solid #cdd2da;
@@ -289,6 +288,7 @@ footer {
     height: 60px;
     display: flex;
     justify-content: center;
+    position: absolute;
     background-color: #426d7e;
     background-image: linear-gradient(43deg, #426d7e 0%, #133342 16%, #0e2838 44%, #0c1011 73%, #000000 100%);
     border: 1px solid #426d7e;
