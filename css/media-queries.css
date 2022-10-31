@@ -23,6 +23,27 @@
 }
 
 @media (max-width: 600px) {
+
+    .nav-menu-desktop {
+        display: none;
+    }
+    .nav-menu-mobile {
+        display: flex;
+        width: auto;
+    }
+
+    /* index */
+    .home-main-text {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    
+    /* Blogs */
+    .blogs-news-container {
+        max-width: min-content;
+        margin: 0;
+    }
+
     .blogs-posts-container .post-container {
         max-width: 95%;
     }

@@ -14,13 +14,25 @@
     <!-- Header -->
     <header>
         <nav class="nav">
-            <section class="nav-profile-link">
+            <section class="nav-menu-desktop">
                 <a href="./index.html">INICIO</a>
                 <a href="./perfil.html">ACERCA DE MI</a>
                 <a href="./blogs.html">MIS PROYECTOS</a>
                 <a href="./contact.html">CONTACTO</a>
             </section>
-            </section>
+            <div class="nav-menu-mobile">
+                <div class="burguer">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+                <div>
+                    <a href="./index.html">INICIO</a>
+                    <a href="./perfil.html">ACERCA DE MI</a>
+                    <a href="./blogs.html">MIS PROYECTOS</a>
+                    <a href="./contact.html">CONTACTO</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -73,5 +85,15 @@
             </a>
         </div>
     </footer>
+
+    <!-- script -->
+    <script>
+        const burguer = document.querySelector('.burguer');
+        const menu = document.querySelector('.nav-menu-mobile div:nth-child(2)');
+        burguer.addEventListener('click', e=> {
+            burguer.classList.toggle('active');
+            menu.classList.toggle('open');
+        })
+    </script>
 </body>
 </html>
