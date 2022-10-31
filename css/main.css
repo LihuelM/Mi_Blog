@@ -177,24 +177,6 @@ nav {
     height: 220px;
 }
 
-/* Main-blogpost */
-.blogpost-img-container {
-    padding: 50px 50px 40px;
-}
-.blogpost-img-container img {
-    width: 100%;
-}
-.blogpost-main-container {
-    padding: 0 50px 40px;
-}
-.blogpost-main-container h3 {
-    border-bottom: 1px solid #cdd2da;
-    padding-bottom: 20px;
-}
-.blogpost-main-container article h1 {
-    font-size: 35px ;
-}
-
 /* Main Profile */
 .profile-main {
     background-image: url('../assets/img/fondo_humo.png');
@@ -286,27 +268,28 @@ nav {
 footer {
     width: 100%;
     height: 60px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+}
+
+.container-footer--sociales {
     background-color: #426d7e;
     background-image: linear-gradient(43deg, #426d7e 0%, #133342 16%, #0e2838 44%, #0c1011 73%, #000000 100%);
     border: 1px solid #426d7e;
-}
-.container-footer {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 10px;
 }
-ul {
-    display: flex;
-    margin: 0px;
-    list-style: none;
-    /* align-items: center;
-    justify-content: space-between; */
-}
-.icons img {
+
+.container-footer--sociales img {
     opacity: .5;
-    height: 50px;
+    height: 55px;
     border-radius: 50%;
     box-shadow: 3px 3px 90px #cdd2da;
+}
+
+.container-footer--sociales .linkedin:hover, 
+.container-footer--sociales .github:hover,
+.container-footer--sociales .instagram:hover {
+    transform: scale(1.3, 1.3);
 }
