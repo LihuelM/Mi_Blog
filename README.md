@@ -6,7 +6,7 @@ Primer Portfolio, realizado como desafío práctico del curso de Maquetación en
 
 ------------
 
-Demo del proyecto:
+Demo del proyecto: https://lihuelm.github.io/Mi_Blog/
 
 ------------
 
