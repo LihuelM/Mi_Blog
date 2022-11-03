@@ -104,7 +104,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url('../assets/img/astronauta.png');
+    background-image: url('../assets/img/astronauta.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,13 +157,11 @@ nav {
 .profile-main-container .profile-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px 40px;
+    justify-content: center;
     border-radius: 10px;
     background-color: rgba(14, 40, 56,0.7);
-    box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
-    max-width: 1100px;
-    margin: auto;
-    align-items: center;
+    box-shadow: 3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
+    padding: 40px;
 }
 .profile-main-container--presentation {
     color: #cdd2da;
@@ -215,17 +213,15 @@ nav {
 .blogs-news-container .blogs-main-new {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px 40px;
+    justify-content: center;
     border-radius: 10px;
-    background-color: rgba(14, 40, 56,0.3);
-    box-shadow:  3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
+    background-color: rgba(14, 40, 56,0.7);
+    box-shadow: 3px 3px 10px #cdd2da, -3px -3px 10px #cdd2da;
+    padding: 40px;
     color: #cdd2da;
-    margin: auto;
-    align-items: center;
 }
 .blogs-new-img-container {
     grid-column: 1;
-    width: 90%;
     display: flex;
     justify-content: space-around;
 }
@@ -262,7 +258,7 @@ nav {
     padding: 80px 40px 80px;
 }
 .blogs-posts-container .post-container p {
-    margin-bottom: 35px;
+    margin-bottom:20px;
     color: #cdd2da;
 }
 .blogs-posts-container .post-container img {
