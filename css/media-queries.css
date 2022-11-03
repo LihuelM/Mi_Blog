@@ -46,17 +46,26 @@
     }
     
     /* Blogs */
+    .blogs-news-container .blogs-main-new {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .blogs-new-img-container {
+        height: 220px;
+    }
     .blogs-posts-container .grid-container {
         grid-template-columns: 1fr;
-        row-gap: 30px;
+        row-gap: 50px;
+        padding: 20px;
     }
 
     /* Profile */
-    .profile-container {
+    .profile-main-container .profile-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2fr;
     }
     .profile-main-proyects .grid-container {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
 }
