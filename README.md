@@ -10,5 +10,6 @@ Demo del proyecto: https://lihuelm.github.io/Mi_Blog/
 
 ------------
 
-![image](https://user-images.githubusercontent.com/110037132/199505150-10edc600-666d-4c66-9232-64cbf7263868.png)
+![image](https://user-images.githubusercontent.com/110037132/208241551-0a083190-d513-4afe-9944-b83b4124e53c.png)
+
 
