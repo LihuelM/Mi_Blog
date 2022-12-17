@@ -29,6 +29,8 @@ nav {
     width: 100%;
     height: 60px;
     display: flex;
+    position: relative;
+    z-index: 99;
     background-color: #426d7e;
     background-image: linear-gradient(43deg, #426d7e 0%, #133342 16%, #0e2838 44%, #0c1011 73%, #000000 100%);
     border: 1px solid #426d7e;
@@ -39,6 +41,9 @@ nav {
     font-family: Orbitron;
     color: #426d7e;
     margin: 0 20px;
+}
+.nav-menu-desktop a:hover {
+    color: whitesmoke;
 }
 .nav-menu-desktop {
     display: flex;
@@ -100,6 +105,13 @@ nav {
 }
 
 /* Main-index (home) */
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    /* z-index: -1; */
+}
+
 .home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -125,6 +137,8 @@ nav {
 }
 .home-main-button {
     display: grid;
+    position: relative;
+    z-index: 99;
     align-items: center;
     width: 200px;
     height: 50px;
@@ -136,6 +150,7 @@ nav {
 }
 .home-main-button:hover {
     transform: scale(1.1, 1.1);
+    transition: transform 1s;
 }
 .home-main-button a {
     font-family: Orbitron;
