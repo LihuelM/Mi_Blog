@@ -95,7 +95,8 @@ nav {
     background-color: rgba(14, 40, 56,0.9);
     width: 100vw;
     height: 0px;
-    position: fixed;
+    position: absolute;
+    z-index: 3;
     top: 60px;
     left: 0px;
     transition: all 250ms ease-out;
@@ -181,7 +182,7 @@ nav {
                 -19px -19px 65px #132025;
     padding: 40px;
     position: relative;
-    z-index: 99;
+    z-index: 1;
 }
 .profile-main-container--presentation {
     color: #cdd2da;
@@ -216,7 +217,7 @@ nav {
                 -19px -19px 65px #132025;
     padding: 40px;
     position: relative;
-    z-index: 99;
+    z-index: 1;
 }
 .proyect-container {
     color: #cdd2da;
@@ -246,7 +247,7 @@ nav {
     padding: 40px;
     color: #cdd2da;
     position: relative;
-    z-index: 99;
+    z-index: 1;
 }
 .blogs-new-img-container {
     grid-column: 1;
@@ -307,7 +308,7 @@ nav {
                 -19px -19px 65px #132025;
     padding: 40px 40px;
     position: relative;
-    z-index: 99;
+    z-index: 1;
 }
 
 
