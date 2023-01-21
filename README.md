@@ -2,7 +2,7 @@
 🖤🖤🖤
 
 
-Primer Portfolio, realizado como desafío práctico del curso de Maquetación en CSS, utilizando Grid y Flexbox.  Diseñado para adaptarse a cualquier dispositivo de los usuarios.
+Primer Portfolio -en principio- fue diseñado como desafío práctico del curso de Maquetación en CSS, utilizando Grid y Flexbox.  Ideado para adaptarse a cualquier dispositivo de los usuarios. En él encontrarás, algunos de mis proyectos realizados como desafíos, en este proceso de aprendizaje hacia el desarrollo web.
 
 ------------
 
